@@ -1,0 +1,14 @@
+# Major Formulas used to create table
+## For Opportunity Score
+Opportunity Score = w1(Demand) + w2(EconomicAttractiveness) - w3(Competition) 
+# w1=w2=0.4, w3=0.2
+
+# Demand proxy = restaurant/10k populatio
+# Economic singal = median household income
+# Competition = average restaurant rating
+
+## For Value Score
+Value Score = Rating-Price+Rent 
+# some of the restaurants were missing price info. I didn't correct/impute them. 
+
+

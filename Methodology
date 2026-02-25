@@ -19,3 +19,10 @@ WR = (v)/(v + C)*R + (C)/(v + C)*m
 # (v) = number of reviews for the restaurant  
 # (m) = global mean rating (average across all restaurants)  
 # (C) = smoothing constant (e.g., typical review count for credibility, used 100 here)
+
+# Demographic and economic variables are defined at the ZIP code level, while the dataset is restaurant-level.
+
+## To prevent duplication bias, FIXED LOD expressions were used: 
+# FIXED [zipcode] : MAX([median_income])
+
+# This ensures correct aggregation independent of restaurant count. 

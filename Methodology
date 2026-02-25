@@ -11,4 +11,16 @@ Opportunity Score = w1(Demand) + w2(EconomicAttractiveness) - w3(Competition
 Value Score = Rating-Price+Rent 
 # some of the restaurants were missing price info. I didn't correct/impute them. 
 
+## For weighted rating
+$$
+\text{WR} = \frac{v}{v + C} \cdot R + \frac{C}{v + C} \cdot m
+$$
+
+Where:  
+
+- \(R\) = restaurant's raw rating  
+- \(v\) = number of reviews for the restaurant  
+- \(m\) = global mean rating (average across all restaurants)  
+- \(C\) = smoothing constant (e.g., typical review count for credibility)
+
 
